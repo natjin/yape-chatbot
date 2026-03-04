@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Yapito — Yape Chatbot</title>
+<meta name="description" content="Chat with Yapito, your friendly Yape assistant. Get answers about payments, transfers, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./chat.css">
+</head>
+<body>
+  <div class="page-bg">
+    <div class="floater floater-1"></div>
+    <div class="floater floater-2"></div>
+    <div class="floater floater-3"></div>
+    <div class="floater floater-4"></div>
+    <div class="floater floater-5"></div>
+    <div class="phone-frame">
+      <div class="phone-notch"><div class="phone-notch-inner"></div></div>
+      <div class="chat-app">
+        <header class="chat-header">
+          <div class="header-left">
+            <div class="avatar-container">
+              <svg class="yapito-avatar" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Yapito avatar">
+                <circle cx="24" cy="24" r="24" fill="#00BFA5"/>
+                <circle cx="24" cy="24" r="22" fill="url(#yapito-grad)"/>
+                <ellipse cx="24" cy="26" rx="14" ry="13" fill="white"/>
+                <circle cx="18.5" cy="23" r="3.5" fill="#4A1A5E"/>
+                <circle cx="29.5" cy="23" r="3.5" fill="#4A1A5E"/>
+                <circle cx="19.5" cy="21.8" r="1.2" fill="white"/>
+                <circle cx="30.5" cy="21.8" r="1.2" fill="white"/>
+                <path d="M18 29.5C18 29.5 21 33 24 33C27 33 30 29.5 30 29.5" stroke="#4A1A5E" stroke-width="2" stroke-linecap="round"/>
+                <ellipse cx="15" cy="28" rx="2.5" ry="1.5" fill="#FFB3C1" opacity="0.6"/>
+                <ellipse cx="33" cy="28" rx="2.5" ry="1.5" fill="#FFB3C1" opacity="0.6"/>
+                <line x1="24" y1="13" x2="24" y2="7" stroke="#00BFA5" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="24" cy="5.5" r="3" fill="#00BFA5"/>
+                <circle cx="24" cy="5.5" r="1.5" fill="white"/>
+                <defs>
+                  <linearGradient id="yapito-grad" x1="2" y1="2" x2="46" y2="46">
+                    <stop offset="0%" stop-color="#9B59B6"/>
+                    <stop offset="100%" stop-color="#722B8C"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="header-info">
+              <h1 class="header-name">Yapito</h1>
+              <span class="header-status"><span class="status-dot"></span> Online</span>
+            </div>
+          </div>
+          <button class="header-menu" aria-label="Menu">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="4" r="1.5" fill="currentColor"/>
+              <circle cx="10" cy="10" r="1.5" fill="currentColor"/>
+              <circle cx="10" cy="16" r="1.5" fill="currentColor"/>
+            </svg>
+          </button>
+        </header>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="quick-replies-container" id="quickReplies"></div>
+        <div class="chat-input-area">
+          <div class="input-wrapper">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Type a message..." autocomplete="off" enterkeyhint="send">
+            <button class="send-btn" id="sendBtn" aria-label="Send message" disabled>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M3 10L17 3L10 17L9 11L3 10Z" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="input-footer">
+            <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="pplx-attr">Created with Perplexity Computer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="desktop-branding">
+      <svg class="yape-logo-desktop" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Yape logo">
+        <text x="0" y="32" font-family="Nunito, sans-serif" font-weight="800" font-size="32" fill="white" opacity="0.9">yape</text>
+      </svg>
+      <p class="desktop-tagline">Chat with Yapito — your friendly payment assistant</p>
+    </div>
+  </div>
+  <script src="./chat.js"></script>
+</body>
+</html>

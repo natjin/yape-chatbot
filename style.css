@@ -1,0 +1,84 @@
+/* ============================
+   YAPE CHATBOT — DESIGN TOKENS
+   ============================ */
+
+:root {
+  /* === TYPOGRAPHY === */
+  --font-display: 'Nunito', system-ui, sans-serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
+
+  /* Fluid type scale */
+  --text-xs: clamp(0.6875rem, 0.65rem + 0.15vw, 0.75rem);    /* 11-12px */
+  --text-sm: clamp(0.8125rem, 0.78rem + 0.15vw, 0.875rem);   /* 13-14px */
+  --text-base: clamp(0.875rem, 0.84rem + 0.15vw, 0.9375rem); /* 14-15px */
+  --text-lg: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);         /* 16-18px */
+  --text-xl: clamp(1.25rem, 1.15rem + 0.4vw, 1.5rem);        /* 20-24px */
+  --text-2xl: clamp(1.5rem, 1.35rem + 0.6vw, 1.875rem);      /* 24-30px */
+  --text-3xl: clamp(2rem, 1.75rem + 1vw, 2.5rem);            /* 32-40px */
+
+  /* === SPACING (4px grid) === */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* === YAPE BRAND COLORS === */
+  --color-primary: #722B8C;
+  --color-primary-hover: #5E2374;
+  --color-primary-dark: #4A1A5E;
+  --color-primary-light: #9B59B6;
+  --color-primary-lighter: #D4A5E8;
+  --color-primary-faint: #F3E8F9;
+
+  --color-accent: #00BFA5;
+  --color-accent-hover: #00A896;
+  --color-accent-dark: #008F7A;
+  --color-accent-light: #4DD9C5;
+  --color-accent-faint: #E0F7F3;
+
+  /* === SURFACE & TEXT (light theme chat area) === */
+  --color-bg: #FFFFFF;
+  --color-surface: #F5F5F5;
+  --color-surface-2: #EEEEEE;
+  --color-surface-offset: #E8E8E8;
+  --color-divider: rgba(0, 0, 0, 0.08);
+
+  --color-text: #2D2D2D;
+  --color-text-muted: #666666;
+  --color-text-faint: #999999;
+  --color-text-inverse: #FFFFFF;
+
+  /* === BOT/USER BUBBLE COLORS === */
+  --color-bubble-bot: #F5F5F5;
+  --color-bubble-user: #722B8C;
+  --color-bubble-user-text: #FFFFFF;
+
+  /* === RADIUS === */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* === SHADOWS === */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.16);
+  --shadow-phone: 0 20px 60px rgba(74, 26, 94, 0.3), 0 8px 24px rgba(0, 0, 0, 0.15);
+
+  /* === TRANSITIONS === */
+  --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-golden: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+}
